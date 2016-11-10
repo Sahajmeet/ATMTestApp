@@ -70,6 +70,77 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AccountSettingsPage.xaml.cs">
+      <DependentUpon>AccountSettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="billSelector.xaml.cs">
+      <DependentUpon>billSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="changePIN.xaml.cs">
+      <DependentUpon>changePIN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="confirmationPage.xaml.cs">
+      <DependentUpon>confirmationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="deposit.xaml.cs">
+      <DependentUpon>deposit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="lockedAccount.xaml.cs">
+      <DependentUpon>lockedAccount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NumberPadFavWithdrawal.xaml.cs">
+      <DependentUpon>NumberPadFavWithdrawal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NumberPadWithdrawal.xaml.cs">
+      <DependentUpon>NumberPadWithdrawal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NumberPadAmount.xaml.cs">
+      <DependentUpon>NumberPadAmount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NumberPadGeneral.xaml.cs">
+      <DependentUpon>NumberPadGeneral.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="transferPage.xaml.cs">
+      <DependentUpon>transferPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NumberPadPIN.xaml.cs">
+      <DependentUpon>NumberPadPIN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="transactionTypesStandard.xaml.cs">
+      <DependentUpon>transactionTypesStandard.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AccountSettingsPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="billSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="deposit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NumberPadFavWithdrawal.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NumberPadWithdrawal.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NumberPadAmount.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="withdrawalOptions.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="withdrawals.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Application.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -78,10 +149,44 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="changePIN.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="changeFavouriteWithdrawal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="changeLanguage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="confirmationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lockedAccount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="NumberPadGeneral.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="transferPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="withdrawalOptions.xaml.cs">
+      <DependentUpon>withdrawalOptions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="withdrawals.xaml.cs">
+      <DependentUpon>withdrawals.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -92,11 +197,21 @@
     <Compile Include="basicOptions.xaml.cs">
       <DependentUpon>basicOptions.xaml</DependentUpon>
     </Compile>
+    <Compile Include="changeFavouriteWithdrawal.xaml.cs">
+      <DependentUpon>changeFavouriteWithdrawal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="changeLanguage.xaml.cs">
+      <DependentUpon>changeLanguage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="NumberPad.xaml">
+    <Page Include="NumberPadPIN.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NumberPadAccount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -104,10 +219,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="transactionTypesStandard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NumberPad.xaml.cs">
-      <DependentUpon>NumberPad.xaml</DependentUpon>
+    <Compile Include="NumberPadAccount.xaml.cs">
+      <DependentUpon>NumberPadAccount.xaml</DependentUpon>
     </Compile>
     <Compile Include="otherAccounts.xaml.cs">
       <DependentUpon>otherAccounts.xaml</DependentUpon>

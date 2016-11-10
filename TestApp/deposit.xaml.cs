@@ -16,40 +16,41 @@ using System.Windows.Shapes;
 namespace TestApp
 {
     /// <summary>
-    /// Interaction logic for otherAccounts.xaml
+    /// Interaction logic for deposit.xaml
     /// </summary>
-    public partial class otherAccounts : Page
+    public partial class deposit : Page
     {
-        public otherAccounts()
+        public deposit()
         {
             InitializeComponent();
         }
 
-        //visa 1
-        private void Button_Click(object sender, RoutedEventArgs e)
+        //amount
+        private void button_Click_2(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        //visa 2
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            string url = "/transactionTypesStandard.xaml";
+            string url = "/NumberPadGeneral.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
         }
 
         //back
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             string url = "/basicOptions.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
         }
 
         //logout
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string url = "/MainWindow.xaml";
+            NavigationService.Navigate(new Uri(url, UriKind.Relative));
+
+        }
+
+        //submit
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-
-            string url = "/MainWindow.xaml";
+            string url = "/confirmationPage.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
         }
     }

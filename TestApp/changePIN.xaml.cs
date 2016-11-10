@@ -16,29 +16,34 @@ using System.Windows.Shapes;
 namespace TestApp
 {
     /// <summary>
-    /// Interaction logic for numberPad.xaml
+    /// Interaction logic for changeFavouriteWithdrawal.xaml
     /// </summary>
-    public partial class NumberPad : Page
+    public partial class changePIN : Page
     {
-        public NumberPad(){
-            InitializeComponent();
-            String title;
-    }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        public changePIN()
         {
-            Button theButton = sender as Button;
-            string url = "/MainWindow.xaml";
+            InitializeComponent();
+        }
+
+        //from
+        private void button_Click_2(object sender, RoutedEventArgs e)
+        {
+            string url = "/NumberPadPIN.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        //back
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
-            Button theButton = sender as Button;
             string url = "/basicOptions.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
         }
-    }
 
+        //logout
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            string url = "/MainWindow.xaml";
+            NavigationService.Navigate(new Uri(url, UriKind.Relative));
+        }
+    }
 }

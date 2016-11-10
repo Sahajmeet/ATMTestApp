@@ -16,48 +16,33 @@ using System.Windows.Shapes;
 namespace TestApp
 {
     /// <summary>
-    /// Interaction logic for basicOptions.xaml
+    /// Interaction logic for confirmationPage.xaml
     /// </summary>
-    public partial class basicOptions : Page
+    public partial class confirmationPage : Page
     {
-        public basicOptions()
+        public confirmationPage()
         {
             InitializeComponent();
         }
 
+        //back to main options
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //NavigationService.GetNavigationService(this).Navigate("otherAccounts.xaml");
-            
-            string url = "/otherAccounts.xaml";
+            string url = "/basicOptions.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
         }
 
+        //quit with receipt
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            
             string url = "/MainWindow.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
         }
 
+        //full quit
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            
-            string url = "/transactionTypesStandard.xaml";
-            NavigationService.Navigate(new Uri(url, UriKind.Relative));
-        }
-
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-            
-            string url = "/transactionTypesStandard.xaml";
-            NavigationService.Navigate(new Uri(url, UriKind.Relative));
-        }
-
-        private void Button_Click_4(object sender, RoutedEventArgs e)
-        {
-            
-            string url = "/AccountSettingsPage.xaml";
+            string url = "/MainWindow.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
         }
     }

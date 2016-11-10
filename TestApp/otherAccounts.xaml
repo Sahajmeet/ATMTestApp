@@ -3,8 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MnumberPad" Height="500" Width="800">
     <Grid Background="Black" Height="490" VerticalAlignment="Top">
-        <Grid HorizontalAlignment="Left" Height="281" VerticalAlignment="Top" Width="745" Margin="24,132,0,0">
-            <Button Content="Option 1" HorizontalAlignment="Left" Margin="11,11,0,0" VerticalAlignment="Top" Width="351" Height="127" FontSize="35" BorderThickness="2">
+        <Grid HorizontalAlignment="Left" Height="281" VerticalAlignment="Top" Width="369" Margin="212,127,0,0">
+            <Button Content="VISA ending in 7462" HorizontalAlignment="Left" VerticalAlignment="Top" Width="352" Height="89" FontSize="35" BorderThickness="2" Margin="7,40,0,0" Click="Button_Click" >
                 <Button.Foreground>
                     <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
                 </Button.Foreground>
@@ -15,29 +15,7 @@
                     <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowTextColorKey}}"/>
                 </Button.Background>
             </Button>
-            <Button Content="Option 2" HorizontalAlignment="Left" Margin="367,11,0,0" VerticalAlignment="Top" Width="368" Height="127" FontSize="35" BorderThickness="2" >
-                <Button.Foreground>
-                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
-                </Button.Foreground>
-                <Button.BorderBrush>
-                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
-                </Button.BorderBrush>
-                <Button.Background>
-                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowTextColorKey}}"/>
-                </Button.Background>
-            </Button>
-            <Button Content="Option 3" HorizontalAlignment="Left" Margin="10,143,0,0" VerticalAlignment="Top" Width="352" Height="128" FontSize="35" BorderThickness="2" >
-                <Button.Foreground>
-                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
-                </Button.Foreground>
-                <Button.BorderBrush>
-                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
-                </Button.BorderBrush>
-                <Button.Background>
-                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowTextColorKey}}"/>
-                </Button.Background>
-            </Button>
-            <Button Content="Option 4" HorizontalAlignment="Left" Margin="367,143,0,0" VerticalAlignment="Top" Width="368" Height="128" FontSize="35" BorderThickness="2" >
+            <Button Content="VISA ending in 5341" HorizontalAlignment="Left" Margin="7,134,0,0" VerticalAlignment="Top" Width="352" Height="89" FontSize="35" BorderThickness="2" Click="Button_Click_2" >
                 <Button.Foreground>
                     <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
                 </Button.Foreground>
@@ -51,7 +29,7 @@
         </Grid>
         <Grid HorizontalAlignment="Left" Height="100" Margin="24,27,0,0" VerticalAlignment="Top" Width="745">
 
-            <Button Content="Logout" HorizontalAlignment="Left" Margin="645,14,0,0" VerticalAlignment="Top" Width="87" Height="68" FontSize="23" BorderThickness="2">
+            <Button Content="Logout" HorizontalAlignment="Left" Margin="645,14,0,0" VerticalAlignment="Top" Width="87" Height="68" FontSize="23" BorderThickness="2" Click="Button_Click_3">
                 <Button.Foreground>
                     <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
                 </Button.Foreground>
@@ -62,7 +40,7 @@
                     <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowTextColorKey}}"/>
                 </Button.Background>
             </Button>
-            <Button Content="Back" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="87" Height="68" FontSize="23" BorderThickness="2">
+            <Button Content="Back" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="87" Height="68" FontSize="23" BorderThickness="2" Click="Button_Click_1">
                 <Button.Foreground>
                     <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
                 </Button.Foreground>

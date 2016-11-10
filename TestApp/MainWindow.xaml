@@ -19,7 +19,7 @@
                     <DropShadowEffect ShadowDepth="2"/>
                 </Grid.Effect>
             </Grid>
-            <Button Content="Enter Account Number" HorizontalAlignment="Left" Margin="185,102,0,0" VerticalAlignment="Top" Width="395" Height="103" FontSize="30" BorderThickness="2" Click="Button_Click" >
+            <Button Content="Enter Account Number" HorizontalAlignment="Left" Margin="185,44,0,0" VerticalAlignment="Top" Width="395" Height="103" FontSize="30" BorderThickness="2" Click="Button_Click" >
                 <Button.Foreground>
                     <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
                 </Button.Foreground>
@@ -31,7 +31,7 @@
                 </Button.Background>
 
             </Button>
-            <Button Content="Swipe Bank Card" HorizontalAlignment="Left" Margin="185,225,0,0" VerticalAlignment="Top" Width="395" Height="103" FontSize="30" BorderThickness="2" Click="Button_Click_1"  >
+            <Button Content="Swipe Bank Card" HorizontalAlignment="Left" Margin="185,152,0,0" VerticalAlignment="Top" Width="395" Height="103" FontSize="30" BorderThickness="2" Click="Button_Click_1"  >
                 <Button.Foreground>
                     <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
                 </Button.Foreground>
@@ -42,7 +42,18 @@
                     <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowTextColorKey}}"/>
                 </Button.Background>
             </Button>
-            <Button Content="Language" HorizontalAlignment="Left" Margin="334,387,0,0" VerticalAlignment="Top" Width="115" Height="52" FontSize="20" BorderThickness="2" >
+            <Button Content="Language" HorizontalAlignment="Left" Margin="334,387,0,0" VerticalAlignment="Top" Width="115" Height="52" FontSize="20" BorderThickness="2" Click="Button_Click_2" >
+                <Button.Foreground>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+                </Button.Foreground>
+                <Button.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowTextColorKey}}"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Tap Bank Card" HorizontalAlignment="Left" Margin="185,260,0,0" VerticalAlignment="Top" Width="395" Height="103" FontSize="30" BorderThickness="2" Click="Button_Click_1"  >
                 <Button.Foreground>
                     <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.WindowColorKey}}"/>
                 </Button.Foreground>

@@ -16,39 +16,18 @@ using System.Windows.Shapes;
 namespace TestApp
 {
     /// <summary>
-    /// Interaction logic for otherAccounts.xaml
+    /// Interaction logic for lockedAccount.xaml
     /// </summary>
-    public partial class otherAccounts : Page
+    public partial class lockedAccount : Page
     {
-        public otherAccounts()
+        public lockedAccount()
         {
             InitializeComponent();
         }
 
-        //visa 1
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        //visa 2
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            string url = "/transactionTypesStandard.xaml";
-            NavigationService.Navigate(new Uri(url, UriKind.Relative));
-        }
-
-        //back
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            string url = "/basicOptions.xaml";
-            NavigationService.Navigate(new Uri(url, UriKind.Relative));
-        }
-
-        //logout
-        private void Button_Click_3(object sender, RoutedEventArgs e)
-        {
-
+            
             string url = "/MainWindow.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
         }

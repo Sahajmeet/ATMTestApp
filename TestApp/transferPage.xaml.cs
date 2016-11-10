@@ -16,49 +16,53 @@ using System.Windows.Shapes;
 namespace TestApp
 {
     /// <summary>
-    /// Interaction logic for basicOptions.xaml
+    /// Interaction logic for deposit.xaml
     /// </summary>
-    public partial class basicOptions : Page
+    public partial class transferPage : Page
     {
-        public basicOptions()
+        public transferPage()
         {
             InitializeComponent();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //NavigationService.GetNavigationService(this).Navigate("otherAccounts.xaml");
             
-            string url = "/otherAccounts.xaml";
+            string url = "/basicOptions.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
         }
 
+        //amount to be transferred
+        private void button_Click_2(object sender, RoutedEventArgs e)
+        {
+            string url = "/NumberPadAmount.xaml";
+            NavigationService.Navigate(new Uri(url, UriKind.Relative));
+        }
+
+        //back
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             
-            string url = "/MainWindow.xaml";
+            string url = "/basicOptions.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-            
-            string url = "/transactionTypesStandard.xaml";
-            NavigationService.Navigate(new Uri(url, UriKind.Relative));
-        }
-
+        //logout
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            
-            string url = "/transactionTypesStandard.xaml";
+            string url = "/MainWindow.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            
-            string url = "/AccountSettingsPage.xaml";
+            string url = "/confirmationPage.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
+        }
+
+        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

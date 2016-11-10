@@ -16,48 +16,54 @@ using System.Windows.Shapes;
 namespace TestApp
 {
     /// <summary>
-    /// Interaction logic for basicOptions.xaml
+    /// Interaction logic for transactionTypes.xaml
     /// </summary>
-    public partial class basicOptions : Page
+    public partial class transactionTypesStandard : Page
     {
-        public basicOptions()
+        public transactionTypesStandard()
         {
             InitializeComponent();
         }
 
+        //favourite withdrawal
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            //NavigationService.GetNavigationService(this).Navigate("otherAccounts.xaml");
-            
-            string url = "/otherAccounts.xaml";
+            string url = "/withdrawalOptions.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            
-            string url = "/MainWindow.xaml";
-            NavigationService.Navigate(new Uri(url, UriKind.Relative));
-        }
-
+        //deposit
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            
-            string url = "/transactionTypesStandard.xaml";
+            string url = "/deposit.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
         }
 
+        //transfer
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            
-            string url = "/transactionTypesStandard.xaml";
+            string url = "/transferPage.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
         }
 
+        //withdrawal
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            
-            string url = "/AccountSettingsPage.xaml";
+            string url = "/withdrawals.xaml";
+            NavigationService.Navigate(new Uri(url, UriKind.Relative));
+        }
+
+        //back
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string url = "/basicOptions.xaml";
+            NavigationService.Navigate(new Uri(url, UriKind.Relative));
+        }
+
+        //logout
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            string url = "/MainWindow.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
         }
     }

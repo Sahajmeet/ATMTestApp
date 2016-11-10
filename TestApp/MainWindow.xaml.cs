@@ -27,15 +27,22 @@ namespace TestApp
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Button theButton = sender as Button;
-            string url = "/NumberPad.xaml";
+            
+            string url = "/NumberPadAccount.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Button theButton = sender as Button;
-            string url = "/NumberPad.xaml";
+            
+            string url = "/NumberPadPIN.xaml";
+            NavigationService.Navigate(new Uri(url, UriKind.Relative));
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            
+            string url = "/changeLanguage.xaml";
             NavigationService.Navigate(new Uri(url, UriKind.Relative));
         }
     }
